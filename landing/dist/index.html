@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ryan Maher's portfolio and projects.">
+  <title>Ryan Maher</title>
+  <style>
+    :root { color-scheme: light; font-family: Georgia, 'Times New Roman', serif; background: #f5f0e6; color: #292820; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; }
+    main { max-width: 68rem; margin: auto; padding: 2rem clamp(1.5rem, 6vw, 5rem); }
+    header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-bottom: 1.5rem; border-bottom: 1px solid #bdb6a7; }
+    .label { font: 0.7rem/1.4 Arial, sans-serif; letter-spacing: .16em; text-transform: uppercase; }
+    .hero { padding: clamp(6rem, 17vw, 12rem) 0; }
+    h1 { margin: 1.5rem 0; font-size: clamp(4rem, 12vw, 9rem); font-weight: normal; letter-spacing: -.06em; line-height: .9; }
+    .intro { max-width: 32rem; font-size: clamp(1.2rem, 2.5vw, 1.6rem); line-height: 1.5; color: #565349; }
+    .projects { border-top: 1px solid #bdb6a7; padding: 2rem 0 5rem; display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; }
+    h2 { margin: 0; font-size: 2rem; font-weight: normal; }
+    .projects p { margin: .75rem 0 0; color: #686457; line-height: 1.6; }
+    footer { border-top: 1px solid #bdb6a7; padding: 1.5rem 0; color: #686457; }
+    @media (max-width: 600px) { .projects { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header><span class="label">Ryan Maher</span><span class="label">Portfolio &amp; projects</span></header>
+    <section class="hero" aria-labelledby="title">
+      <span class="label">A place for ideas and things made</span>
+      <h1 id="title">Ryan<br>Maher<span aria-hidden="true">.</span></h1>
+      <p class="intro">A home for projects, experiments, and work in progress.</p>
+    </section>
+    <section class="projects" aria-labelledby="projects-title">
+      <span class="label">01 / Projects</span>
+      <div><h2 id="projects-title">More to come.</h2><p>New projects will find their home here.</p></div>
+    </section>
+    <footer class="label">Ryan Maher</footer>
+  </main>
+</body>
+</html>
