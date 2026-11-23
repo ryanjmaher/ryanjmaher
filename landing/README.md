@@ -8,5 +8,11 @@ cd landing
 python3 -m http.server 8000 --directory dist
 ```
 
-No build step or dependencies are required. `.openai/hosting.json` is a
-placeholder; configure it for the chosen hosting service before deployment.
+No build step or dependencies are required.
+
+The GitHub Actions workflow deploys `dist/` to GitHub Pages when changes are
+pushed to `main`. In the repository's Settings → Pages, set the build and
+deployment source to **GitHub Actions**. The expected project site address is
+`https://ryanjmaher.github.io/ryanjmaher/`.
+
+`.openai/hosting.json` is a placeholder and is not used by GitHub Pages.
